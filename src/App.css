@@ -1,0 +1,248 @@
+
+/* body{
+  background: #1c2237 !important;
+} */
+
+.LoginBox{
+  width: 22rem;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 115, 230, 0.3);
+}
+
+body{
+
+background-color: #1c2237 !important;
+color: #fff !important;
+width: 100%;
+height: 50%;
+}
+
+div{
+  color: white;
+}
+
+
+#1{
+  color: red;
+}
+
+.btn-floating {
+  background-color: gold!important;
+}
+
+.sing-in li a{
+  text-decoration:none;
+  font-size:25px!important;
+
+}
+
+.sing-in .in a{
+  font-size: 15px!important;
+}
+
+form{
+  padding:20px;
+  margin-top: 60px;
+}
+
+form button, h5{
+  margin: 20px 0;
+}
+  
+ 
+
+
+.banner{
+  background-image: url(./components/pages/imgs/events.jfif);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.banner .Typewriter{ 
+  color: rgb(252, 174, 29);
+  text-align: center;
+}
+
+
+/* EVENTS PAGE */
+
+
+.events span{
+  font-weight: 700;
+}
+
+.events span{
+  font-weight: 700;
+}
+
+.items .post p{
+  color: #ffff !important;
+}
+
+.items .post a{
+  color: #ffff !important;
+  text-decoration: none;
+}
+
+
+.items .post{
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #1c2237f1;
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.items{
+  background-image: url(./components/pages/imgs/dj.jpg);
+  position: relative;
+  background-position: center;
+  margin-top: 23px;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding: 9px;
+  height: 76.5vh;
+}
+
+.latest .one{
+  background-image: url(./components/pages/imgs/car.jpg);
+}
+
+.latest .two{
+  background-image: url(./components/pages/imgs/antelop.jpg);
+}
+
+.latest .three{
+  background-image: url(./components/pages/imgs/dawn.jpg);
+}
+
+.latest .three{
+  background-image: url(./components/pages/imgs/sea.jpg);
+}
+
+.latest .four{
+  background-image: url(./components/pages/imgs/fly.jpg);
+}
+
+.latest .five{
+  background-image: url(./components/pages/imgs/citrus.jpg);
+}
+
+.latest .six{
+  background-image: url(./components/pages/imgs/leaves.jpg);
+}
+
+.latest .seven{
+  background-image: url(./components/pages/imgs/nature.jpg);
+}
+
+.latest .eight{
+  background-image: url(./components/pages/imgs/mountain.jpg);
+}
+
+.latest .nine{
+  background-image: url(./components/pages/imgs/insect.jpg);
+}
+
+.post-options{
+  border-top: 1px solid gold;
+  display:flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+  cursor: pointer;
+}
+
+.post-option{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 5px ;
+  margin-left:-2%;
+  color: gold!important;
+  
+  
+}
+
+.post-option > p{
+  margin-left: 10px;
+  margin-top: 10px;
+  color: gold;
+}
+
+.post-option:hover{
+  border-radius: 5px;}
+
+
+/* News page  */
+
+.events span{
+  font-weight: 700;
+}
+
+
+.items .post{
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #1c2237f1;
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.latest .item .posts a{
+  text-decoration: none;
+}
+
+.latest .item .posts{
+  display: block;
+  text-decoration: none;
+  background-color: #1c2237f1;
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.latest .item .posts:hover{
+  background-color: white;
+  color:#1c2237f1!important;
+  transition: 0.5s;
+}
+
+.latest .item{
+  margin-top: 23px;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding: 9px;
+  height: 300px;
+}
+
+
+.date{font-size:25px}
+
+

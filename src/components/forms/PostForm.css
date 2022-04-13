@@ -1,0 +1,48 @@
+.Post-form{
+    background:white;
+    width: 100%;
+    margin-top:30px!important;
+}
+
+.Post-form label {
+    width:100%;
+    font-size:25px;
+    text-transform:capitalize;
+    color:#1c2237;
+}
+
+input{
+    color:#1c2237!important;
+    margin: 0 0 30px 0px!important;
+    padding:0 0 0 10px!important;
+    font-size:18px!important;
+}
+
+input::-ms-value{
+    color:red!important; 
+
+}
+
+.submit-button{
+    color:white;
+    background: #1c2237;
+    display: flex;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+    border-radius: 4px;
+    font-weight:bold;
+    font-size:20px;
+    justify-content: center;
+}
+
+
+.submit-button:hover{
+border:1px solid #1c2237;
+background: white;
+}
+
+h2{
+    font-size:40px;
+    margin: 80px 0 15px 0!important;
+}
