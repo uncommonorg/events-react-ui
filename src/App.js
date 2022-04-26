@@ -8,16 +8,13 @@ import Review from './components/pages/Review';
 import PostDetails from './components/PostDetails';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/includes/Footer';
-
 import Signin from './components/Auth/Signin';
 import SignUp from './components/Auth/SignUp';
 
 
 function App() {
     return (
-
         <div className="container">
-
             <Router>
                 <Navbar/>
                 <Switch>
@@ -27,20 +24,14 @@ function App() {
                     <Route path='/Review' component={Review} />
                     <Route path='/PostDetails/:id' component={PostDetails} />
                     <Route path='/Signin' component={Signin} />
-                    <Route path='/SignUp' component={SignUp} />
-                   
+                    <Route path='/SignUp' component={SignUp} /> 
                 </Switch>
             </Router>
             
-
-    
             <div className="footer mt-5">
                 <Footer/>
             </div>
-
-        </div>
-
-      
+        </div>      
     )
 }
 

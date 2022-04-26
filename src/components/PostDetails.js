@@ -1,14 +1,10 @@
 import React from 'react'
 
 function PostDetails(props) {
-
     const id = props.match.params.id
-
-
 
     return (
         <div className="container">
-
             <div className="row">
                 <div className="col-md-4" >
                     <div class="item one">
