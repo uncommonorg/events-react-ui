@@ -8,15 +8,21 @@ import Review from './components/pages/Review';
 import PostDetails from './components/PostDetails';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/includes/Footer';
-
+import {connect} from 'react-redux';
 import Signin from './components/Auth/Signin';
 import SignUp from './components/Auth/SignUp';
+import Profile from './components/pages/Profile';
+import {Redirect } from 'react-router-dom';
+import {compose} from 'redux'
 
 
-function App() {
+function App(props) {
+    const {auth} = props.auth;
+    // if( auth.uid) return <Redirect to='/signin'/>
     return (
 
         <div className="container">
+           
 
             <Router>
                 <Navbar/>
@@ -28,6 +34,7 @@ function App() {
                     <Route path='/PostDetails/:id' component={PostDetails} />
                     <Route path='/Signin' component={Signin} />
                     <Route path='/SignUp' component={SignUp} />
+                    <Route path='/Profile' component={Profile} />
                    
                 </Switch>
             </Router>
@@ -44,4 +51,10 @@ function App() {
     )
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return{
+        auth: state.firebase.auth
+    }
+}
+
+export default compose(connect(mapStateToProps))   (App);

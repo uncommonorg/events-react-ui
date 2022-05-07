@@ -22,4 +22,3 @@ export const addEvent = (event) => {
             return response.json();
         });
 };
-

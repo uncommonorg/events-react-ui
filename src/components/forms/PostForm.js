@@ -2,17 +2,13 @@ import  { useState } from 'react';
 import './PostForm.css';
 
 
-
-
-
-
 function EventForm({addEvent}) {
 
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [location, setLocation] = useState("");
     
-
+     
     const createEvent = (e) => {
         e.preventDefault();
         addEvent({title, description, location});
@@ -42,10 +38,7 @@ function EventForm({addEvent}) {
                     
                     <button type="submit" className="btn submit-button">Add Event</button>
                 </form>
-
-                
-
-                
+               
 
         </div>
         

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import {  signUp } from '../actions/authActions';
 import { Redirect } from 'react-router-dom'
 
+
  class SignUp extends Component {
 
     state ={
