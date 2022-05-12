@@ -1,45 +1,7 @@
-// import React from 'react'
-// import './profile.css'
-
-// function Profile() {
-
-
-//     function handleChange() {
-
-//     }
-
-//     function handleClick() {
-
-//     }
-
-
-//   return (
-    
-//     <div className="fields">
-//         profile
-//         <input type="file" name="" id="" onChange={handleChange} />
-//         <button onClick={handleClick} >Upload</button>
-//         <img src="" alt="Avatar" className='Avatar' />
-//     </div>
-//   )
-// }
-
-// export default Profile
-
-
-
-
 import React from 'react'
 
 function Profile()   {
-  function handleChange() {
-
-        }
-    
-        function handleClick() {
-    
-        }
-
+ 
   return (
     <div>
          <div class="container-xl px-4 mt-4">
@@ -56,7 +18,7 @@ function Profile()   {
                           <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt=""/>
                           
                           <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
-                          <input type="file" name="" id="" onChange={handleChange} />
+                          <input type="file" name="" id=""  />
         
                           <button class="btn btn-primary" type="button">Upload new image</button>
                       </div>

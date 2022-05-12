@@ -1,8 +1,10 @@
 
 import firebase from 'firebase/app';
+import {useEffect, useState} from 'react'
 import 'firebase/firestore';
 // import { getFirestore } from 'firebase/firestore';
 import 'firebase/auth';
+
 
 
 
@@ -21,9 +23,10 @@ const fbConfig = {
 
   firebase.initializeApp( fbConfig );
  
-  
   firebase.firestore().settings({ timestampsInSnapshots: true });
 
+
+ 
  
   
   
