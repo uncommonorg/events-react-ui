@@ -2,6 +2,7 @@ import  { useState } from 'react';
 import './PostForm.css';
 
 
+
 function EventForm({addEvent}) {
 
     const [title, setTitle] = useState("");

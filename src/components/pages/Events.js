@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PostForm from "../forms/PostForm";
+// import PostForm from "../forms/PostForm";
 import * as api from "../../api";
 import EventList from "../includes/EventList";
 
@@ -27,11 +27,11 @@ const Events = ({latest}) => {
     },
         [latest]);
 
-    const addEvent = (event) => {
-        api.addEvent(event).then(data => {
-            setEvents(oldEvents => [...oldEvents, data]);
-        });
-    } 
+    // const addEvent = (event) => {
+    //     api.addEvent(event).then(data => {
+    //         setEvents(oldEvents => [...oldEvents, data]);
+    //     });
+    // } 
 
 // end of API code
 // cards
