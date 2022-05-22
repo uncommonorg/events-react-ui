@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.22.0",
@@ -14,7 +15,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "final-form": "^4.20.4",
     "firebase": "^8.10.0",
+    "formik": "^2.2.9",
     "install": "^0.13.0",
+    "jslint": "^0.12.1",
     "material-ui-core": "^5.0.1",
     "mobx": "^6.3.3",
     "react": "^17.0.2",
@@ -26,16 +29,17 @@
     "react-icons": "^4.2.0",
     "react-particles-js": "^3.5.3",
     "react-query": "^3.21.1",
-    "react-redux": "^5.1.1",
+    "react-redux": "^8.0.1",
     "react-redux-firebase": "^2.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.1",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.3",
     "react-spring": "^9.2.4",
-    "redux": "^4.1.1",
+    "red": "^0.0.0",
+    "redux": "^4.2.0",
     "redux-firestore": "^0.15.0",
-    "redux-thunk": "^2.3.0",
+    "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.1",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
@@ -65,6 +69,20 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^11.2.7"
-  }
+    "@testing-library/react": "^11.2.7",
+    "eslint-config-react-app": "^7.0.1",
+    "xxxxx": "^1.0.3"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uncommonorg/events-react-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uncommonorg/events-react-ui/issues"
+  },
+  "homepage": "https://github.com/uncommonorg/events-react-ui#readme"
 }
