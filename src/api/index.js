@@ -1,4 +1,4 @@
-const url = 'http://localhost:8082/';
+const url = "http://127.0.0.1:5000/events/api/";
 
 const headers = {
     accept: 'application/json',
@@ -6,7 +6,7 @@ const headers = {
 };
 
 export const fetchAllEvents = () => {
-    return fetch(url + 'events').then((response) => {
+    return fetch(url + 'Events').then((response) => {
         return response.json();
     });
 }
@@ -22,3 +22,22 @@ export const addEvent = (event) => {
             return response.json();
         });
 };
+
+
+export const userInfo = (userInfo) => {
+    
+    return fetch(url + 'userInfo',
+    
+        {
+            method: 'post',
+            mode: 'cors',
+            headers: headers,
+            body: JSON.stringify(userInfo)
+        }).then((response) => {
+            return response.json();
+        });
+};
+
+
+
+

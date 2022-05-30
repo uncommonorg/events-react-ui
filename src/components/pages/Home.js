@@ -1,10 +1,12 @@
 
 import {React, useState, useEffect} from 'react';
 import Post from '../Post';
+import EventForm from '../forms/EventForm';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Hero from '../includes/hero'
 import Events from './Events'
+
 
 
 
@@ -27,11 +29,6 @@ function Home(props) {
     const  auth  = props.auth;
     if (!auth.uid) return <Redirect to='/signin' /> 
 
-  
-
-    
-
- 
 
     return (
         
@@ -40,20 +37,12 @@ function Home(props) {
           <Hero />
           
            <Post posts={posts} hed="Latest Events" />
-            <div> 
-                      
-               
+            <div>    
             <div className="col-12 p-0">
                   <h2>Upcoming Events</h2>
                 </div>
-                <Events latest={true} />
-                
-
-               
+                <Events latest={true} />             
             </div>
-
-            
-
         </div>
     )
 }
