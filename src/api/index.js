@@ -5,6 +5,11 @@ const headers = {
     'content-type': 'application/json'
 };
 
+// this should be used whenever you call a protected method 
+// - something that the back end only allows to authorized users.
+// you will need the state.auth.token value passing in to the component,
+// and then passed to the api call from the action method
+
 const authorizedHeaders = (token) => {
     return {
         ...headers,

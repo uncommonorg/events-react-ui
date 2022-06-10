@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { signIn } from '../actions/authActions';
 import { Redirect } from 'react-router-dom';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
  class Signin extends Component {
 
@@ -21,7 +22,21 @@ import { Redirect } from 'react-router-dom';
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.signIn(this.state)
+        // calling firebase method here, and passing
+        // the result to action method - whose job is 
+        // to update the reducer. only need to do that if logged in.
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          this.props.signIn(user);
+        })
+        .catch((error) => {
+            // up to you what you do with the error
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log("An error occured: ", errorCode, errorMessage);
+        });
         
     }
     render() {
