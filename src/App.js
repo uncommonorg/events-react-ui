@@ -8,7 +8,9 @@ import Review from './components/pages/Review';
 import PostDetails from './components/PostDetails';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/includes/Footer';
+
 import {connect} from 'react-redux';
+
 import Signin from './components/Auth/Signin';
 import SignUp from './components/Auth/SignUp';
 import Profile from './components/pages/Profile';
@@ -20,9 +22,7 @@ function App(props) {
     const {auth} = props.auth;
     // if( auth.uid) return <Redirect to='/signin'/>
     return (
-
         <div className="container">
-           
 
             <Router>
                 <Navbar/>
@@ -33,21 +33,20 @@ function App(props) {
                     <Route path='/Review' component={Review} />
                     <Route path='/PostDetails/:id' component={PostDetails} />
                     <Route path='/Signin' component={Signin} />
+
                     <Route path='/SignUp' component={SignUp} />
                     <Route path='/Profile' component={Profile} />
                    
+
+                    <Route path='/SignUp' component={SignUp} /> 
+
                 </Switch>
             </Router>
             
-
-    
             <div className="footer mt-5">
                 <Footer/>
             </div>
-
-        </div>
-
-      
+        </div>      
     )
 }
 

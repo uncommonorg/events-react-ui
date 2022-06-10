@@ -10,10 +10,8 @@ import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 
 function Post( { posts, date, tittle, hed  } ) {
-
     const [ openModal, setOpenModal] = useState(false);
  
-
     return (
             <div className="container post-list mt-5">
                 {/* < Modal/> */}
@@ -60,19 +58,12 @@ function Post( { posts, date, tittle, hed  } ) {
                                           <div className="post-option">
                                                 <NearMeIcon/>
                                                 <p>share</p>
-                                          </div>
-
-                                           
-                                          
+                                          </div>                                          
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        
                     ))}
                 </div>
                 { openModal && <Modal closeModal={setOpenModal} /> }

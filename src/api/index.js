@@ -5,7 +5,17 @@ const headers = {
     'content-type': 'application/json'
 };
 
+const authorizedHeaders = (token) => {
+    return {
+        ...headers,
+        authorization: `Bearer ${token}`,
+        'accept': 'application/json',
+        'content-type': 'application/json'
+    };
+}
+
 export const fetchAllEvents = () => {
+    
     return fetch(url + 'Events').then((response) => {
         return response.json();
     });
@@ -16,7 +26,7 @@ export const addEvent = (event) => {
         {
             method: 'post',
             mode: 'cors',
-            headers: headers,
+            headers: headers ,
             body: JSON.stringify(event)
         }).then((response) => {
             return response.json();

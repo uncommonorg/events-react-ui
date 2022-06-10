@@ -5,16 +5,11 @@ import EventList from "../includes/EventList";
 
 
 const Events = ({latest}) => {
-    
-
-    const eventId = 1;
+    // const eventId = 1;
     const [events, setEvents] = useState([]);
-    const [show, setShow ] = useState(false)
+    // const [show, setShow ] = useState(false)
     // const show = !hide;
    
-    
-
-
     useEffect(() => {
         api.fetchAllEvents().then((response) => {
             if (latest){
@@ -22,7 +17,6 @@ const Events = ({latest}) => {
             } else{
                 setEvents(response);
             }
-            
         });
     },
         [latest]);
@@ -42,30 +36,21 @@ const Events = ({latest}) => {
     return (
         <div className="container">
             <div className="row">
-                
-
-               
-
-              
-             
-              {events.map(function (item) {
-                return <div className="col-md-4">
-                 <div className="latest" >
-                    <div className="item one" >
-                           <EventList 
-                              title={item.title}
-                              id={item.id}
-                              description={item.description}
-                              location={item.location}
-                              key={item.id} />
+                {events.map(function (item) {
+                    return <div className="col-md-4">
+                        <div className="latest" >
+                            <div className="item one" >
+                                <EventList 
+                                    title={item.title}
+                                    id={item.id}
+                                    description={item.description}
+                                    location={item.location}
+                                    key={item.id} />
+                            </div>
+                        </div>
                     </div>
-                 </div>
-              </div>
-               }  
-            )}
-
-            
-           
+                }  
+                )}
                 {/* <If conditional={show} component={<PostForm addEvent={addEvent} />} /> */}
            </div>
         </div>
