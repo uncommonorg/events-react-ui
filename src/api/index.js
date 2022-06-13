@@ -24,4 +24,24 @@ export const addEvent = (event) => {
 };
 
 
+export const postData = (data) => {
+    return fetch(url + 'data',
+        {
+            method: 'post',
+            mode: 'cors',
+            headers: { 'Authorization': 'TOKEN' },
+            body: JSON.stringify(data)
+        }).then((response) => {
+            return response.json();
+        });
+};
+
+
+
+
+
+
+
+
+
 
