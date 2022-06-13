@@ -1,5 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import Post from '../Post';
+import EventForm from '../forms/EventForm';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Hero from '../includes/hero'
@@ -17,6 +18,7 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
+
 function Home(props) {
     const [posts, setPosts] = useState([
       // {title: "The Future open source chatting", date: "Monday", venue:"Harare", id: 1 }, 
@@ -31,11 +33,23 @@ function Home(props) {
     useEffect( () => {}, [] );
    
     const  auth  = props.auth;
+
     if (!auth.uid) return <Redirect to='/signin' />
+
 
     return (
         <div>
           <Hero />
+
+          
+           <Post posts={posts} hed="Latest Events" />
+            <div>    
+            <div className="col-12 p-0">
+                  <h2>Upcoming Events</h2>
+                </div>
+                <Events latest={true} />             
+            </div>
+
           <Post posts={posts} hed="Latest Events" />
           <div> 
             <div className="col-12 p-0">
@@ -43,6 +57,7 @@ function Home(props) {
             </div>
             <Events latest={true} />
           </div>
+
         </div>
     )
 }
