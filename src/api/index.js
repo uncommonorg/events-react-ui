@@ -39,20 +39,14 @@ export const addEvent = (event) => {
 };
 
 
-export const userInfo = (userInfo) => {
-    
-    return fetch(url + 'userInfo',
-    
+export const postData = (data) => {
+    return fetch(url + 'data',
         {
             method: 'post',
             mode: 'cors',
-            headers: headers,
-            body: JSON.stringify(userInfo)
+            headers: { 'Authorization': 'TOKEN' },
+            body: JSON.stringify(data)
         }).then((response) => {
             return response.json();
         });
 };
-
-
-
-
