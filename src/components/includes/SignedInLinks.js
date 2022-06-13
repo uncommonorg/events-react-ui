@@ -18,11 +18,14 @@ const SignedInLinks = (props) => {
             <li>
                 <NavLink to='REVIEWS'> REVIEWS </NavLink>
             </li>
+            {/* <li>
+                <NavLink to='Profile'>Profile</NavLink>
+            </li> */}
             <li>
                 <a  href="/" onClick={props.signOut}  > LOG OUT </a>
             </li>
             <li className='in' >
-                <NavLink to='/' className='btn btn-floating peach lighten-8 '  > 
+                <NavLink to='Profile' className='btn btn-floating peach lighten-8 '  > 
                    {props.profile.initials}
                  </NavLink>
                 

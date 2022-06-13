@@ -1,5 +1,9 @@
 const initState = {
-    authError: null
+  // modified data to include details of the user
+  // what you use is up to you - but need the token
+    authError: null,
+    email: '',
+    token: ''
   }
   
   const authReducer = (state = initState, action) => {
@@ -14,7 +18,9 @@ const initState = {
       case 'LOGIN_SUCCESS':
         console.log('login success');
         return {
-          ...state,
+          //saving the details of the user
+          token: action.user.accessToken,
+          email: action.user.email,
           authError: null
         }
   
